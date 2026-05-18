@@ -102,6 +102,9 @@ termux_step_make_install() {
 	# import std
 	cp toolchains/llvm/prebuilt/linux-x86_64/lib/libc++.modules.json \
 		$TERMUX_PKG_MASSAGEDIR/$TERMUX_PREFIX/lib
+
+	ls -lh toolchains/llvm/prebuilt/linux-x86_64/share
+
 	cp -r toolchains/llvm/prebuilt/linux-x86_64/share/libc++ \
 		$TERMUX_PKG_MASSAGEDIR/$TERMUX_PREFIX/share
 
